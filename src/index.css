@@ -1,0 +1,68 @@
+*,body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+/* body{
+  background-color: burlywood;
+} */
+p{
+  font-size: 16px;
+}
+#root{
+  margin: 0;
+  padding: 0;
+}
+header h1{
+  font-weight: 700;
+}
+.navCon{
+  margin: auto;
+  width: 70%;
+  padding: 25px 25px 30px 25px;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid hsl(220, 14%, 75%);
+}
+header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  text-align: center;
+ 
+}
+nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+a{
+  color:  hsl(220, 14%, 75%);
+  text-decoration: none;
+}
+#left-header{
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  
+}
+#right-header{
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+#profilePics{
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}

@@ -1,14 +1,8 @@
-import './App.css';
-
+import './index.css';
+import Header from "./header";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Hello Make I check on or two
-        </p>
-      </header>
-    </div>
+   <Header />
   );
 }
 
