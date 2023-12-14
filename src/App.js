@@ -1,8 +1,13 @@
-import './index.css';
+import "./index.css";
 import Header from "./header";
+import Content from "./Content";
+
 function App() {
   return (
-   <Header />
+    <div className="container">
+    <Header />
+    <Content />
+    </div>
   );
 }
 
