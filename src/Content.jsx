@@ -38,9 +38,9 @@ function ProductDescription() {
       </div>
       <div id="cartDetails">
         <div id="productNo">
-          <img src={MinusButton} alt="minusButton" />
+          <img src={MinusButton} alt="minusButton" className="valueBtn"/>
           <h5>0</h5>
-          <img src={AddButton} alt="addButton" />
+          <img src={AddButton} alt="addButton" className="valueBtn"/>
         </div>
         <div id="button">
           <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">

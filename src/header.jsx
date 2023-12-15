@@ -12,11 +12,11 @@ function Header() {
           </div>
 
           <nav>
-            <a href="#collections">Collections</a>
-            <a href="#collections">Men</a>
-            <a href="#collections">Women</a>
-            <a href="#collections">About</a>
-            <a href="#collections">Contact</a>
+            <a href="#collections" className="headerLink">Collections</a>
+            <a href="#collections" className="headerLink">Men</a>
+            <a href="#collections" className="headerLink">Women</a>
+            <a href="#collections" className="headerLink">About</a>
+            <a href="#collections" className="headerLink">Contact</a>
           </nav>
         </div>
         <div id="right-header">
