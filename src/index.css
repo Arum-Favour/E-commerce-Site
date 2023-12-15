@@ -197,14 +197,20 @@ a {
 .lightGallery {
   width: 100%;
   height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.mainGallery {
+.lg-react-element {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
   gap: 5%;
+}
+.lg-container{
+  opacity: 0.95;
 }
 .images {
   width: 70px;

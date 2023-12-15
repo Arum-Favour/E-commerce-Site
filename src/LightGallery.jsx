@@ -18,8 +18,7 @@ import "./index.css";
 function ImageGallery() {
   return (
     <div className="lightGallery">
-      <LightGallery speed={500} plugins={[lgThumbnail]}>
-      <div className="mainGallery">
+      <LightGallery speed={500} plugins={[lgThumbnail,lgZoom]}>
         <a href={thumbnail1}>
           <img src={product1} alt="product1" className="images"/>
         </a>
@@ -32,7 +31,6 @@ function ImageGallery() {
         <a href={thumbnail4}>
           <img src={product4} alt="product4" className="images"/>
         </a>
-        </div>
       </LightGallery>
     </div>
   );
