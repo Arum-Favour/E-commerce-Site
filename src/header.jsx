@@ -29,3 +29,12 @@ function Header() {
 }
 
 export default Header;
+
+
+function CartBasket(params) {
+   return(
+    <div id="checkOut">
+      
+    </div>
+   )
+}
