@@ -196,7 +196,7 @@ a.headerLink:hover{
 #productNo img:hover {
   cursor: pointer;
 }
-#button {
+.button {
   width: 60%;
   height: 50px;
   background-color: hsl(26, 100%, 55%);
@@ -207,7 +207,7 @@ a.headerLink:hover{
   border-radius: 10px;
   color: white;
 }
-#button:hover {
+.button:hover {
   cursor: pointer;
   opacity: 0.8;
   box-shadow: 6px 8px 20px  5px hsl(26, 51%, 63%);
@@ -241,4 +241,34 @@ a.headerLink:hover{
 .images:hover {
   opacity: 0.75;
   border:3px solid hsl(26, 100%, 55%);
+}
+#checkOut{
+  width: 25%;
+  height: 30%;
+  border: 2px solid red;
+  position: absolute;
+  top: 90px;
+  right: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  background-color: brown;
+  gap: 25px;
+}
+#cartCont{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+}
+#productDesc{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+#cartheader{
+  width: 100%;
+  border-bottom: 1px solid hsl(219, 9%, 45%);
+  padding: 15px;
 }

@@ -2,6 +2,7 @@ import cart from "./images/icon-cart.svg";
 import profilePics from "./images/.trashed-1700743217-1698147239566.jpg";
 import React from "react";
 
+
 function Header() {
   return (
     <div className="navCon">
@@ -12,11 +13,21 @@ function Header() {
           </div>
 
           <nav>
-            <a href="#collections" className="headerLink">Collections</a>
-            <a href="#collections" className="headerLink">Men</a>
-            <a href="#collections" className="headerLink">Women</a>
-            <a href="#collections" className="headerLink">About</a>
-            <a href="#collections" className="headerLink">Contact</a>
+            <a href="#collections" className="headerLink">
+              Collections
+            </a>
+            <a href="#collections" className="headerLink">
+              Men
+            </a>
+            <a href="#collections" className="headerLink">
+              Women
+            </a>
+            <a href="#collections" className="headerLink">
+              About
+            </a>
+            <a href="#collections" className="headerLink">
+              Contact
+            </a>
           </nav>
         </div>
         <div id="right-header">
@@ -28,13 +39,14 @@ function Header() {
   );
 }
 
-export default Header;
-
-
-function CartBasket(params) {
-   return(
+export function CartBasket(props) {
+  return (
     <div id="checkOut">
-      
+      <div id="cartheader">
+        <h3>Cart</h3>
+      </div>
     </div>
-   )
+  );
 }
+
+export default Header;
