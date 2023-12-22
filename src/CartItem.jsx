@@ -15,6 +15,6 @@ export function CartItem() {
       <div className="button">
         <p>Checkout</p>
       </div>
-    </div>
+    </div>   
   );
 }
