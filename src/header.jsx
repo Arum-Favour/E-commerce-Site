@@ -2,7 +2,6 @@ import cart from "./images/icon-cart.svg";
 import profilePics from "./images/.trashed-1700743217-1698147239566.jpg";
 import React from "react";
 
-
 function Header() {
   return (
     <div className="navCon">
@@ -40,6 +39,7 @@ function Header() {
 }
 
 export function CartBasket(props) {
+  let loggedIn = true;
   return (
     <div id="checkOut">
       <div id="cartheader">
