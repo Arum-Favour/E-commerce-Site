@@ -45,7 +45,6 @@ export function CartBasket(props) {
       <div id="cartheader">
         <h3>Cart</h3>
       </div>
-      <div></div>
     </div>
   );
 }
