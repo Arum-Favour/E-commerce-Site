@@ -2,6 +2,7 @@ import image from "./images/image-product-1.jpg";
 
 const ProductDetails = [
   {
+    id:1,
     productName:"Fall Limited Edition Sneakers",
     Image: image,
     description:

@@ -65,7 +65,7 @@ a {
   text-decoration: none;
   text-align: center;
 }
-a.headerLink:hover{
+a.headerLink:hover {
   border-bottom: 3px solid hsl(26, 100%, 55%);
   color: hsl(219, 9%, 45%);
 }
@@ -84,17 +84,41 @@ a.headerLink:hover{
   justify-content: center;
   align-items: center;
   gap: 40px;
+  padding: 20px;
+  position: relative;
 }
-#right-header img{
+#right-header img {
   cursor: pointer;
+}
+.itemNo {
+  width: 100%;
+  position: absolute;
+}
+.badge {
+  background-color: darkorange;
+  z-index: 9;
+  margin-left: 25px;
+  margin-top: -33px;
+  border-radius: 5px;
+  width: fit-content;
+  padding: 0 5px;
+}
+#cartItem {
+  width: 20px;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
 }
 #profilePics {
   border-radius: 50%;
   width: 40px;
   height: 40px;
 }
-#profilePics:hover{
-   border:2px solid hsl(26, 100%, 55%);
+#profilePics:hover {
+  border: 2px solid hsl(26, 100%, 55%);
 }
 .content {
   margin: 5% auto 0 auto;
@@ -210,7 +234,7 @@ a.headerLink:hover{
 .button:hover {
   cursor: pointer;
   opacity: 0.8;
-  box-shadow: 6px 8px 20px  5px hsl(26, 51%, 63%);
+  box-shadow: 6px 8px 20px 5px hsl(26, 51%, 63%);
 }
 .valueBtn:hover {
   opacity: 0.7;
@@ -240,10 +264,10 @@ a.headerLink:hover{
 }
 .images:hover {
   opacity: 0.75;
-  border:3px solid hsl(26, 100%, 55%);
+  border: 3px solid hsl(26, 100%, 55%);
 }
-#checkOut{
-  width: 25%;
+#checkOut {
+  width: 23%;
   height: 30%;
   border: 2px solid red;
   position: absolute;
@@ -255,20 +279,38 @@ a.headerLink:hover{
   align-items: flex-start;
   background-color: brown;
   gap: 25px;
+  border-radius: 10px;
 }
-#cartCont{
+#cartCont {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap:5px;
-}
-#productDesc{
-  display: flex;
-  justify-content: left;
+  gap: 15px;
+  justify-content: center;
   align-items: center;
 }
-#cartheader{
+#productDesc {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#cartheader {
   width: 100%;
   border-bottom: 1px solid hsl(219, 9%, 45%);
   padding: 15px;
+}
+.checkOutBtn {
+  width: 90%;
+  height: 50px;
+  background-color: hsl(26, 100%, 55%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 10px;
+  color: white;
+}
+.checkOutBtn :hover {
+  cursor: pointer;
 }

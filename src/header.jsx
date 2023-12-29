@@ -1,8 +1,10 @@
 import cart from "./images/icon-cart.svg";
 import profilePics from "./images/.trashed-1700743217-1698147239566.jpg";
-import React from "react";
+import React, { useState } from "react";
+import CartItem from "./CartItem";
 
 function Header() {
+  const [itemCount, setItemCount] = useState(0);
   return (
     <div className="navCon">
       <header>
@@ -30,7 +32,10 @@ function Header() {
           </nav>
         </div>
         <div id="right-header">
-          <img src={cart} alt="cartImage" />
+          <div id="cartItem">
+            <div className="itemNo badge">{itemCount}</div>
+            <img src={cart} alt="cartImage" className="itemNo"/>
+          </div>
           <img src={profilePics} alt="profilePics" id="profilePics" />
         </div>
       </header>
@@ -39,13 +44,13 @@ function Header() {
 }
 
 export function CartBasket(props) {
-  let loggedIn = true;
+  let loggedIn = false;
   return (
     <div id="checkOut">
       <div id="cartheader">
         <h3>Cart</h3>
       </div>
-      <div></div>
+      {loggedIn ? <h4>Empty Cart</h4> : <CartItem />}
     </div>
   );
 }
