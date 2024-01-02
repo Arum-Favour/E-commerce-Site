@@ -14,7 +14,7 @@ export function CartItem(props) {
       <div className="checkOutBtn">
         <p>Checkout</p>
       </div>
-      <div></div>
+     
     </div>
   );
 }
