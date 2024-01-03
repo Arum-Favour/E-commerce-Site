@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import CartItem from "./CartItem";
 
 function Header() {
-  const [itemCount, setItemCount] = useState(0);
+  const [itemCount, setItemCount] = useState(3);
   return (
     <div className="navCon">
       <header>
