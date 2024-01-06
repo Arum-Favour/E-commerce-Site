@@ -51,7 +51,7 @@ export function CartBasket(props) {
         <h3>Cart</h3>
       </div>
       {loggedIn ? <h4>Empty Cart</h4> : <CartItem />}
-    
+    </div>
   );
 }
 
