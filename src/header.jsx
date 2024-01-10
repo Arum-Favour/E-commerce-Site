@@ -44,7 +44,7 @@ function Header() {
 }
 
 export function CartBasket(props) {
-  let loggedIn ;
+  let loggedIn = false;
   return (
     <div id="checkOut">
       <div id="cartheader">
