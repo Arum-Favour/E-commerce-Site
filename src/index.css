@@ -312,3 +312,6 @@ a.headerLink:hover {
 .checkOutBtn :hover {
   cursor: pointer;
 }
+#checkOut .active{
+  visibility: hidden;
+}

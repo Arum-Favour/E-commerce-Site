@@ -4,7 +4,12 @@ import React, { useState } from "react";
 import CartItem from "./CartItem";
 
 function Header() {
-  const [itemCount, setItemCount] = useState(3);
+  const [itemCount, setItemCount] = useState("6");
+  //Toggles visibility for the CartBasket component when the cart image is clicked
+  const [showCart, setShowCart] = useState(false);
+  const handleClick = (event) => {
+    setShowCart((current) => !current);
+  };
   return (
     <div className="navCon">
       <header>
@@ -34,16 +39,22 @@ function Header() {
         <div id="right-header">
           <div id="cartItem">
             <div className="itemNo badge">{itemCount}</div>
-            <img src={cart} alt="cartImage" className="itemNo"/>
+            <img
+              src={cart}
+              alt="cartImage"
+              className="itemNo"
+              onClick={handleClick}
+            />
           </div>
           <img src={profilePics} alt="profilePics" id="profilePics" />
         </div>
+        {showCart && <CartBasket />}
       </header>
     </div>
   );
 }
 
-export function CartBasket(props) {
+export function CartBasket() {
   let loggedIn = false;
   return (
     <div id="checkOut">
