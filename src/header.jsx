@@ -5,11 +5,18 @@ import CartItem from "./CartItem";
 
 function Header() {
   const [itemCount, setItemCount] = useState("6");
+  
   //Toggles visibility for the CartBasket component when the cart image is clicked
   const [showCart, setShowCart] = useState(false);
   const handleClick = (event) => {
     setShowCart((current) => !current);
   };
+
+
+  const addToCart = ()=>{
+    
+  }
+
   return (
     <div className="navCon">
       <header>
@@ -55,13 +62,13 @@ function Header() {
 }
 
 export function CartBasket() {
-  let loggedIn = false;
+  
   return (
     <div id="checkOut">
       <div id="cartheader">
         <h3>Cart</h3>
       </div>
-      {loggedIn ? <h4>Empty Cart</h4> : <CartItem />}
+      <CartItem />
     </div>
   );
 }
