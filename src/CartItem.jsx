@@ -3,7 +3,7 @@ import React from "react";
 
 export const CartItem =({cartItems = [], setCartItems })=> {
   return (
-    {cartItems.length > 0 ?(<div id="cartCont">
+    <div id="cartCont">
     <div id="productDesc">
       <img src={props.image} alt="productimage" />
       <p>
@@ -15,7 +15,7 @@ export const CartItem =({cartItems = [], setCartItems })=> {
       <p>Checkout</p>
     </div>
    
-  </div>) : <h3>Empty Cart</h3>} 
+  </div>
     
   );
 }
