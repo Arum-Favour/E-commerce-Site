@@ -68,7 +68,7 @@ export function CartBasket() {
       <div id="cartheader">
         <h3>Cart</h3>
       </div>
-      <CartItem />
+      <CartItem /> 
     </div>
   );
 }

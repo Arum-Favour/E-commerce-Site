@@ -38,23 +38,7 @@ function ProductDescription(props,{cartItems=[], setCartItems }) {
   }
 
   const handleAddtoCart = () =>{
-    if (setQuantity > 0){
-      const existingCartItemIndex = cartItems.findIndex(item => item.id === ProductDetails.id);
-
-      if (existingCartItemIndex !== -1) {
-        const updatedCartItems = [...cartItems];
-        updatedCartItems[existingCartItemIndex].quantity += quantity;
-        updatedCartItems[existingCartItemIndex].totalPrice += ProductDetails.price * quantity;
-        setCartItems(updatedCartItems);
-      } else {
-        const newItem = {
-          ...ProductDetails,
-          quantity: quantity,
-          totalPrice: ProductDetails.price * quantity,
-        };
-        setCartItems([...cartItems, newItem]);
-      }
-    }
+   
   }
   return (
     <div className="rightContent">
