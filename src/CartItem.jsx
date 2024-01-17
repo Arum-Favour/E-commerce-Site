@@ -1,7 +1,8 @@
 import deleteImg from "./images/icon-delete.svg";
-import React from "react";
+import React, { useState } from "react";
+import ProductDetails from "./Products"
 
-export const CartItem =({cartItems = [], setCartItems })=> {
+export const CartItem =(props)=> {
   return (
     <div id="cartCont">
     <div id="productDesc">

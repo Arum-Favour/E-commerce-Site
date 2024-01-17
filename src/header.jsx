@@ -4,18 +4,13 @@ import React, { useState } from "react";
 import CartItem from "./CartItem";
 
 function Header() {
-  const [itemCount, setItemCount] = useState("6");
-  
+  const [itemCount, setItemCount] = useState("");
+
   //Toggles visibility for the CartBasket component when the cart image is clicked
   const [showCart, setShowCart] = useState(false);
   const handleClick = (event) => {
     setShowCart((current) => !current);
   };
-
-
-  const addToCart = ()=>{
-    
-  }
 
   return (
     <div className="navCon">
@@ -62,13 +57,12 @@ function Header() {
 }
 
 export function CartBasket() {
-  
   return (
     <div id="checkOut">
       <div id="cartheader">
         <h3>Cart</h3>
       </div>
-      <CartItem /> 
+      <CartItem />
     </div>
   );
 }
