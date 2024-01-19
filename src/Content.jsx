@@ -3,7 +3,7 @@ import ImageComp from "./ImageComp";
 import MinusButton from "./images/icon-minus.svg";
 import AddButton from "./images/icon-plus.svg";
 import ProductDetails from "./Products";
-// import {addToCart,CartItem} from "./CartItem";
+import CartItem from "./CartItem";
 
 function Content() {
   return (
@@ -26,21 +26,23 @@ function createProduct(ProductDetails) {
 }
 
 function ProductDescription(props) {
-  const [cartItems, setCartItems] = useState([{}]);
+  const [cartItems, setCartItems] = useState([]);
+  var cartIt;
   let addItems = ProductDetails.map((item) => {
-    if (item.id == 1) {
-      return item;
+    if (item.id === 1) {
+       cartIt = item;
     }
+    return cartIt;
   });
-  function addToCart() {
+  //To add items to cart and update cart items
+    function addToCart() {
     if (cartItems.length <= 0) {
-      setCartItems([...cartItems,  addItems ]);
-      console.log("hello world");
+      setCartItems([...cartItems,  {meat:"Hello",greet:"I dey hail o"} ]);
+      console.log(cartIt);
     }
   }
 
   const [quantity, setQuantity] = useState(0);
-
   function add() {
     setQuantity(quantity + 1);
   }
