@@ -7,7 +7,7 @@ function Header() {
   const [itemCount, setItemCount] = useState("");
 
   //Toggles visibility for the CartBasket component when the cart image is clicked
-  const [showCart, setShowCart] = useState(false);
+  const [showCart, setShowCart] = useState(true);
   const handleClick = (event) => {
     setShowCart((current) => !current);
   };
@@ -62,7 +62,7 @@ export function CartBasket() {
       <div id="cartheader">
         <h3>Cart</h3>
       </div>
-      <CartItem />
+       <CartItem /> 
     </div>
   );
 }

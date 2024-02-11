@@ -315,3 +315,7 @@ a.headerLink:hover {
 #checkOut .active{
   visibility: hidden;
 }
+#cartBox{
+  width: 100%;
+  height: fit-content;
+}

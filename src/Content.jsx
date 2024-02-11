@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import ImageComp from "./ImageComp";
 import MinusButton from "./images/icon-minus.svg";
 import AddButton from "./images/icon-plus.svg";
 import ProductDetails from "./Products";
-import CartItem from "./CartItem";
+import { MyContext } from "./MyContext";
 
 function Content() {
   return (
@@ -17,6 +17,7 @@ function Content() {
 function createProduct(ProductDetails) {
   return (
     <ProductDescription
+      key={ProductDetails.id}
       productName={ProductDetails.productName}
       description={ProductDetails.description}
       price={ProductDetails.price}
@@ -26,19 +27,19 @@ function createProduct(ProductDetails) {
 }
 
 function ProductDescription(props) {
-  const [cartItems, setCartItems] = useState([]);
+  const { cartItems, setCartItems } = useContext(MyContext);
   var cartIt;
   let addItems = ProductDetails.map((item) => {
     if (item.id === 1) {
-       cartIt = item;
+      cartIt = item;
     }
     return cartIt;
   });
   //To add items to cart and update cart items
-    function addToCart() {
+  function addToCart() {
     if (cartItems.length <= 0) {
-      setCartItems([...cartItems,  {meat:"Hello",greet:"I dey hail o"} ]);
-      console.log(cartIt);
+      setCartItems([...cartItems, { cartIt }]);
+      console.log(cartItems);
     }
   }
 
